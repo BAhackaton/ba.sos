@@ -1,0 +1,148 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="List" priority="0" />
+      <Item value="ItemViewModel`0" priority="2" />
+      <Item value="int" priority="1" />
+      <Item value="double" priority="5" />
+      <Item value="var" priority="1" />
+      <Item value="new" priority="3" />
+      <Item value="dbBASOSEntities`0" priority="0" />
+      <Item value="from" priority="0" />
+      <Item value="context" priority="0" />
+      <Item value="where" priority="1" />
+      <Item value="select" priority="0" />
+      <Item value="x" priority="7" />
+      <Item value="Nombre" priority="0" />
+      <Item value="Telefono" priority="0" />
+      <Item value="Titulo" priority="0" />
+      <Item value="Ubicacion" priority="0" />
+      <Item value="private" priority="1" />
+      <Item value="x2" priority="0" />
+      <Item value="return" priority="1" />
+      <Item value="Math`0" priority="0" />
+      <Item value="r" priority="0" />
+      <Item value="Distancia" priority="0" />
+      <Item value="GetDistancia`0" priority="0" />
+      <Item value="y" priority="1" />
+      <Item value="z" priority="3" />
+      <Item value="result" priority="1" />
+      <Item value="tipo" priority="0" />
+      <Item value="SOSService" priority="0" />
+      <Item value="Service1Client`0" priority="0" />
+      <Item value="Service1Client" priority="0" />
+      <Item value="client" priority="1" />
+      <Item value="loc" priority="1" />
+      <Item value="void" priority="0" />
+      <Item value="LocalizameAhora`0" priority="0" />
+      <Item value="e" priority="1" />
+      <Item value="App`0" priority="1" />
+      <Item value="if" priority="0" />
+      <Item value="else" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SOSService1.dbBASOSEntities">
+      <Item value="Lugares" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SOSService1.Lugares">
+      <Item value="Nombre" priority="1" />
+      <Item value="Telefono" priority="0" />
+      <Item value="Direccion" priority="0" />
+      <Item value="Comuna" priority="0" />
+      <Item value="X" priority="0" />
+      <Item value="Y" priority="0" />
+      <Item value="TipoID" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Math">
+      <Item value="Sqrt`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Nullable`1">
+      <Item value="Value" priority="1" />
+      <Item value="HasValue" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IQueryable`1">
+      <Item value="OrderBy`2" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SOSService1.ItemViewModel">
+      <Item value="Distancia" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IOrderedQueryable`1">
+      <Item value="ToList`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BA.SOS.SOSService.Service1Client">
+      <Item value="GetDataPoliciasAsync`0" priority="0" />
+      <Item value="GetDataPoliciasCompleted" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Device.Location.GeoCoordinateWatcher">
+      <Item value="Position" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Device.Location.GeoPosition`1">
+      <Item value="Location" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Device.Location.GeoCoordinate">
+      <Item value="Latitude" priority="0" />
+      <Item value="Longitude" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BA.SOS.MainViewModel">
+      <Item value="ItemsPolicia" priority="0" />
+      <Item value="PropertyChanged" priority="0" />
+      <Item value="IsDataPoliciaLoaded" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BA.SOS.SOSService.GetDataPoliciasCompletedEventArgs">
+      <Item value="Result" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@BA.SOS.App">
+      <Item value="ViewModel" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Visibility">
+      <Item value="Visible" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="30DAE3C3-ADAF-4718-8B8B-D91574208099/f:App.xaml.cs" caret="3845" fromTop="23" />
+      <File id="30DAE3C3-ADAF-4718-8B8B-D91574208099/f:MainPage.xaml" caret="3865" fromTop="23" />
+      <File id="30DAE3C3-ADAF-4718-8B8B-D91574208099/d:SampleData/f:MainViewModelSampleData.xaml" caret="0" fromTop="0" />
+      <File id="30DAE3C3-ADAF-4718-8B8B-D91574208099/f:MainPage.xaml.cs" caret="1738" fromTop="23" />
+      <File id="30DAE3C3-ADAF-4718-8B8B-D91574208099/f:App.xaml" caret="0" fromTop="0" />
+      <File id="30DAE3C3-ADAF-4718-8B8B-D91574208099/f:ServiceReferences.ClientConfig" caret="0" fromTop="0" />
+      <File id="30DAE3C3-ADAF-4718-8B8B-D91574208099/d:ViewModels/f:MainViewModel.cs" caret="458" fromTop="0" />
+      <File id="088BF441-7D85-4D59-9DC6-2B65B305421D/f:Service1.svc.cs" caret="1437" fromTop="38" />
+      <File id="088BF441-7D85-4D59-9DC6-2B65B305421D/f:Web.config" caret="0" fromTop="0" />
+      <File id="088BF441-7D85-4D59-9DC6-2B65B305421D/f:IService1.cs" caret="259" fromTop="11" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="30DAE3C3-ADAF-4718-8B8B-D91574208099/f:MainPage.xaml.cs" caret="1779" fromTop="20" />
+      <File id="30DAE3C3-ADAF-4718-8B8B-D91574208099/f:MainPage.xaml.cs" caret="3420" fromTop="27" />
+      <File id="30DAE3C3-ADAF-4718-8B8B-D91574208099/f:MainPage.xaml.cs" caret="3204" fromTop="22" />
+      <File id="30DAE3C3-ADAF-4718-8B8B-D91574208099/f:MainPage.xaml.cs" caret="1766" fromTop="22" />
+      <File id="30DAE3C3-ADAF-4718-8B8B-D91574208099/f:MainPage.xaml.cs" caret="1738" fromTop="23" />
+      <File id="30DAE3C3-ADAF-4718-8B8B-D91574208099/f:MainPage.xaml" caret="2949" fromTop="11" />
+      <File id="30DAE3C3-ADAF-4718-8B8B-D91574208099/f:MainPage.xaml" caret="3865" fromTop="23" />
+      <File id="30DAE3C3-ADAF-4718-8B8B-D91574208099/d:SampleData/f:MainViewModelSampleData.xaml" caret="0" fromTop="0" />
+      <File id="30DAE3C3-ADAF-4718-8B8B-D91574208099/d:ViewModels/f:MainViewModel.cs" caret="1927" fromTop="20" />
+      <File id="30DAE3C3-ADAF-4718-8B8B-D91574208099/d:ViewModels/f:MainViewModel.cs" caret="458" fromTop="15" />
+      <File id="088BF441-7D85-4D59-9DC6-2B65B305421D/f:IService1.cs" caret="2226" fromTop="34" />
+      <File id="088BF441-7D85-4D59-9DC6-2B65B305421D/f:Service1.svc.cs" caret="1437" fromTop="35" />
+      <File id="088BF441-7D85-4D59-9DC6-2B65B305421D/f:IService1.cs" caret="259" fromTop="11" />
+      <File id="088BF441-7D85-4D59-9DC6-2B65B305421D/f:IService1.cs" caret="549" fromTop="11" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

@@ -1,0 +1,32 @@
+c:\users\christian\documents\visual studio 2010\Projects\BA.SOS\BA.SOS\Bin\Debug\ApplicationIcon.png
+c:\users\christian\documents\visual studio 2010\Projects\BA.SOS\BA.SOS\Bin\Debug\Background.png
+c:\users\christian\documents\visual studio 2010\Projects\BA.SOS\BA.SOS\Bin\Debug\BA.SOS.dll
+c:\users\christian\documents\visual studio 2010\Projects\BA.SOS\BA.SOS\Bin\Debug\BA.SOS.pdb
+c:\users\christian\documents\visual studio 2010\Projects\BA.SOS\BA.SOS\Bin\Debug\AppManifest.xaml
+c:\users\christian\documents\visual studio 2010\Projects\BA.SOS\BA.SOS\Bin\Debug\BA.SOS.xap
+c:\users\christian\documents\visual studio 2010\Projects\BA.SOS\BA.SOS\Bin\Debug\Microsoft.Phone.Controls.dll
+c:\users\christian\documents\visual studio 2010\Projects\BA.SOS\BA.SOS\Bin\Debug\Microsoft.Phone.Controls.xml
+c:\users\christian\documents\visual studio 2010\Projects\BA.SOS\BA.SOS\obj\Debug\App.g.i.cs
+c:\users\christian\documents\visual studio 2010\Projects\BA.SOS\BA.SOS\obj\Debug\MainPage.g.i.cs
+c:\users\christian\documents\visual studio 2010\Projects\BA.SOS\BA.SOS\obj\Debug\BA.SOS.g.resources
+c:\users\christian\documents\visual studio 2010\Projects\BA.SOS\BA.SOS\obj\Debug\BA.SOS.dll
+c:\users\christian\documents\visual studio 2010\Projects\BA.SOS\BA.SOS\obj\Debug\BA.SOS.pdb
+c:\users\christian\documents\visual studio 2010\Projects\BA.SOS\BA.SOS\obj\Debug\XapCacheFile.xml
+c:\users\christian\documents\visual studio 2010\Projects\BA.SOS\BA.SOS\Bin\Debug\Microsoft.Phone.Controls.Maps.dll
+c:\users\christian\documents\visual studio 2010\Projects\BA.SOS\BA.SOS\Bin\Debug\Microsoft.Phone.Controls.Maps.xml
+C:\Users\chescalante\Desktop\BA.SOS\BA.SOS\Bin\Debug\ApplicationIcon.png
+C:\Users\chescalante\Desktop\BA.SOS\BA.SOS\Bin\Debug\Background.png
+C:\Users\chescalante\Desktop\BA.SOS\BA.SOS\Bin\Debug\BA.SOS.dll
+C:\Users\chescalante\Desktop\BA.SOS\BA.SOS\Bin\Debug\BA.SOS.pdb
+C:\Users\chescalante\Desktop\BA.SOS\BA.SOS\Bin\Debug\AppManifest.xaml
+C:\Users\chescalante\Desktop\BA.SOS\BA.SOS\Bin\Debug\BA.SOS.xap
+C:\Users\chescalante\Desktop\BA.SOS\BA.SOS\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\chescalante\Desktop\BA.SOS\BA.SOS\Bin\Debug\Microsoft.Phone.Controls.Maps.dll
+C:\Users\chescalante\Desktop\BA.SOS\BA.SOS\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Users\chescalante\Desktop\BA.SOS\BA.SOS\Bin\Debug\Microsoft.Phone.Controls.Maps.xml
+C:\Users\chescalante\Desktop\BA.SOS\BA.SOS\obj\Debug\App.g.i.cs
+C:\Users\chescalante\Desktop\BA.SOS\BA.SOS\obj\Debug\MainPage.g.i.cs
+C:\Users\chescalante\Desktop\BA.SOS\BA.SOS\obj\Debug\BA.SOS.g.resources
+C:\Users\chescalante\Desktop\BA.SOS\BA.SOS\obj\Debug\BA.SOS.dll
+C:\Users\chescalante\Desktop\BA.SOS\BA.SOS\obj\Debug\BA.SOS.pdb
+C:\Users\chescalante\Desktop\BA.SOS\BA.SOS\obj\Debug\XapCacheFile.xml

@@ -1,0 +1,5 @@
+C:\Users\chescalante\Desktop\BA.SOS\SOSService1\bin\Debug\SOSService1.dll.config
+C:\Users\chescalante\Desktop\BA.SOS\SOSService1\bin\Debug\SOSService1.dll
+C:\Users\chescalante\Desktop\BA.SOS\SOSService1\bin\Debug\SOSService1.pdb
+C:\Users\chescalante\Desktop\BA.SOS\SOSService1\obj\Debug\SOSService1.dll
+C:\Users\chescalante\Desktop\BA.SOS\SOSService1\obj\Debug\SOSService1.pdb

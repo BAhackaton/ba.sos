@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbBASOSModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="dbBASOSEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Lugares" EntityType="dbBASOSModel.Lugares" />
+    <EntitySet Name="Tipos" EntityType="dbBASOSModel.Tipos" />
+    <AssociationSet Name="FK_Lugares_Lugares" Association="dbBASOSModel.FK_Lugares_Lugares">
+      <End Role="Tipos" EntitySet="Tipos" />
+      <End Role="Lugares" EntitySet="Lugares" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Lugares">
+    <Key>
+      <PropertyRef Name="LugarID" />
+    </Key>
+    <Property Name="LugarID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TipoID" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="Direccion" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="Numero" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Barrio" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="Circunscripcion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="DireccionNormalizada" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="Comuna" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="Geocodificacion" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="Telefono" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="X" Type="Double" />
+    <Property Name="Y" Type="Double" />
+    <NavigationProperty Name="Tipos" Relationship="dbBASOSModel.FK_Lugares_Lugares" FromRole="Lugares" ToRole="Tipos" />
+  </EntityType>
+  <EntityType Name="Tipos">
+    <Key>
+      <PropertyRef Name="TipoID" />
+    </Key>
+    <Property Name="TipoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Lugares" Relationship="dbBASOSModel.FK_Lugares_Lugares" FromRole="Tipos" ToRole="Lugares" />
+  </EntityType>
+  <Association Name="FK_Lugares_Lugares">
+    <End Role="Tipos" Type="dbBASOSModel.Tipos" Multiplicity="1" />
+    <End Role="Lugares" Type="dbBASOSModel.Lugares" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tipos">
+        <PropertyRef Name="TipoID" />
+      </Principal>
+      <Dependent Role="Lugares">
+        <PropertyRef Name="TipoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

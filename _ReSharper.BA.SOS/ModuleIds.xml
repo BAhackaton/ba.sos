@@ -1,0 +1,6 @@
+<Modules>
+  <Module PersistentId="7B1676F0-CC07-4D6C-A6F8-252DD4809254" ModuleId="SOSService" />
+  <Module PersistentId="A073B331-8A81-4FA4-B5CB-09A4BB074AEE" ModuleId="SOSService1" />
+  <Module PersistentId="30DAE3C3-ADAF-4718-8B8B-D91574208099" ModuleId="BA.SOS" />
+  <Module PersistentId="088BF441-7D85-4D59-9DC6-2B65B305421D" ModuleId="SOSService2" />
+</Modules>

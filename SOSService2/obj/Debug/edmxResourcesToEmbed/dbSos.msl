@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbBASOSModelStoreContainer" CdmEntityContainer="dbBASOSEntities">
+    <EntitySetMapping Name="Lugares">
+      <EntityTypeMapping TypeName="dbBASOSModel.Lugares">
+        <MappingFragment StoreEntitySet="Lugares">
+          <ScalarProperty Name="LugarID" ColumnName="LugarID" />
+          <ScalarProperty Name="TipoID" ColumnName="TipoID" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Numero" ColumnName="Numero" />
+          <ScalarProperty Name="Barrio" ColumnName="Barrio" />
+          <ScalarProperty Name="Circunscripcion" ColumnName="Circunscripcion" />
+          <ScalarProperty Name="DireccionNormalizada" ColumnName="DireccionNormalizada" />
+          <ScalarProperty Name="Comuna" ColumnName="Comuna" />
+          <ScalarProperty Name="Geocodificacion" ColumnName="Geocodificacion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="X" ColumnName="X" />
+          <ScalarProperty Name="Y" ColumnName="Y" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipos">
+      <EntityTypeMapping TypeName="dbBASOSModel.Tipos">
+        <MappingFragment StoreEntitySet="Tipos">
+          <ScalarProperty Name="TipoID" ColumnName="TipoID" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BA.SOS", "BA.SOS\BA.SOS.csproj", "{30DAE3C3-ADAF-4718-8B8B-D91574208099}"
+	ProjectSection(ProjectDependencies) = postProject
+		{088BF441-7D85-4D59-9DC6-2B65B305421D} = {088BF441-7D85-4D59-9DC6-2B65B305421D}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOSService2", "SOSService2\SOSService2.csproj", "{088BF441-7D85-4D59-9DC6-2B65B305421D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30DAE3C3-ADAF-4718-8B8B-D91574208099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30DAE3C3-ADAF-4718-8B8B-D91574208099}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30DAE3C3-ADAF-4718-8B8B-D91574208099}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{30DAE3C3-ADAF-4718-8B8B-D91574208099}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30DAE3C3-ADAF-4718-8B8B-D91574208099}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30DAE3C3-ADAF-4718-8B8B-D91574208099}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{088BF441-7D85-4D59-9DC6-2B65B305421D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{088BF441-7D85-4D59-9DC6-2B65B305421D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{088BF441-7D85-4D59-9DC6-2B65B305421D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{088BF441-7D85-4D59-9DC6-2B65B305421D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="dbBASOSModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="dbBASOSModelStoreContainer">
+          <EntitySet Name="Lugares" EntityType="dbBASOSModel.Store.Lugares" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Tipos" EntityType="dbBASOSModel.Store.Tipos" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Lugares_Lugares" Association="dbBASOSModel.Store.FK_Lugares_Lugares">
+            <End Role="Tipos" EntitySet="Tipos" />
+            <End Role="Lugares" EntitySet="Lugares" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Lugares">
+          <Key>
+            <PropertyRef Name="LugarID" />
+          </Key>
+          <Property Name="LugarID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TipoID" Type="int" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" Nullable="false" MaxLength="500" />
+          <Property Name="Direccion" Type="varchar" MaxLength="500" />
+          <Property Name="Numero" Type="varchar" MaxLength="50" />
+          <Property Name="Barrio" Type="varchar" MaxLength="500" />
+          <Property Name="Circunscripcion" Type="varchar" MaxLength="50" />
+          <Property Name="DireccionNormalizada" Type="varchar" MaxLength="500" />
+          <Property Name="Comuna" Type="varchar" MaxLength="500" />
+          <Property Name="Geocodificacion" Type="varchar" MaxLength="500" />
+          <Property Name="Telefono" Type="varchar" MaxLength="50" />
+          <Property Name="X" Type="float" />
+          <Property Name="Y" Type="float" />
+        </EntityType>
+        <EntityType Name="Tipos">
+          <Key>
+            <PropertyRef Name="TipoID" />
+          </Key>
+          <Property Name="TipoID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="varchar" Nullable="false" MaxLength="500" />
+        </EntityType>
+        <Association Name="FK_Lugares_Lugares">
+          <End Role="Tipos" Type="dbBASOSModel.Store.Tipos" Multiplicity="1" />
+          <End Role="Lugares" Type="dbBASOSModel.Store.Lugares" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tipos">
+              <PropertyRef Name="TipoID" />
+            </Principal>
+            <Dependent Role="Lugares">
+              <PropertyRef Name="TipoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="dbBASOSModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="dbBASOSEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Lugares" EntityType="dbBASOSModel.Lugares" />
+          <EntitySet Name="Tipos" EntityType="dbBASOSModel.Tipos" />
+          <AssociationSet Name="FK_Lugares_Lugares" Association="dbBASOSModel.FK_Lugares_Lugares">
+            <End Role="Tipos" EntitySet="Tipos" />
+            <End Role="Lugares" EntitySet="Lugares" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Lugares">
+          <Key>
+            <PropertyRef Name="LugarID" />
+          </Key>
+          <Property Name="LugarID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TipoID" Type="Int32" Nullable="false" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="Direccion" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="Numero" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Barrio" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="Circunscripcion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DireccionNormalizada" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="Comuna" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="Geocodificacion" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="Telefono" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="X" Type="Double" />
+          <Property Name="Y" Type="Double" />
+          <NavigationProperty Name="Tipos" Relationship="dbBASOSModel.FK_Lugares_Lugares" FromRole="Lugares" ToRole="Tipos" />
+        </EntityType>
+        <EntityType Name="Tipos">
+          <Key>
+            <PropertyRef Name="TipoID" />
+          </Key>
+          <Property Name="TipoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Lugares" Relationship="dbBASOSModel.FK_Lugares_Lugares" FromRole="Tipos" ToRole="Lugares" />
+        </EntityType>
+        <Association Name="FK_Lugares_Lugares">
+          <End Role="Tipos" Type="dbBASOSModel.Tipos" Multiplicity="1" />
+          <End Role="Lugares" Type="dbBASOSModel.Lugares" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tipos">
+              <PropertyRef Name="TipoID" />
+            </Principal>
+            <Dependent Role="Lugares">
+              <PropertyRef Name="TipoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="dbBASOSModelStoreContainer" CdmEntityContainer="dbBASOSEntities">
+          <EntitySetMapping Name="Lugares">
+            <EntityTypeMapping TypeName="dbBASOSModel.Lugares">
+              <MappingFragment StoreEntitySet="Lugares">
+                <ScalarProperty Name="LugarID" ColumnName="LugarID" />
+                <ScalarProperty Name="TipoID" ColumnName="TipoID" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+                <ScalarProperty Name="Numero" ColumnName="Numero" />
+                <ScalarProperty Name="Barrio" ColumnName="Barrio" />
+                <ScalarProperty Name="Circunscripcion" ColumnName="Circunscripcion" />
+                <ScalarProperty Name="DireccionNormalizada" ColumnName="DireccionNormalizada" />
+                <ScalarProperty Name="Comuna" ColumnName="Comuna" />
+                <ScalarProperty Name="Geocodificacion" ColumnName="Geocodificacion" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+                <ScalarProperty Name="X" ColumnName="X" />
+                <ScalarProperty Name="Y" ColumnName="Y" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tipos">
+            <EntityTypeMapping TypeName="dbBASOSModel.Tipos">
+              <MappingFragment StoreEntitySet="Tipos">
+                <ScalarProperty Name="TipoID" ColumnName="TipoID" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="dbSos">
+        <EntityTypeShape EntityType="dbBASOSModel.Lugares" Width="1.5" PointX="3" PointY="1" Height="3.7109993489583331" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBASOSModel.Tipos" Width="1.5" PointX="0.75" PointY="2.125" Height="1.5956835937499996" IsExpanded="true" />
+        <AssociationConnector Association="dbBASOSModel.FK_Lugares_Lugares" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="2.922841796875" />
+          <ConnectorPoint PointX="3" PointY="2.922841796875" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

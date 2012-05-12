@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:21096/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SOSService2" />
+  <xs:element name="GetDataPolicias">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="x" type="xs:double" />
+        <xs:element minOccurs="0" name="y" type="xs:double" />
+        <xs:element minOccurs="0" name="tipo" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataPoliciasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/SOSService2" minOccurs="0" name="GetDataPoliciasResult" nillable="true" type="q1:ArrayOfItemViewModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

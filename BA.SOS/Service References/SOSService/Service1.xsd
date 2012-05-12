@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SOSService2" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SOSService2" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfItemViewModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ItemViewModel" nillable="true" type="tns:ItemViewModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfItemViewModel" nillable="true" type="tns:ArrayOfItemViewModel" />
+  <xs:complexType name="ItemViewModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefono" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Titulo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ubicacion" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ItemViewModel" nillable="true" type="tns:ItemViewModel" />
+</xs:schema>
